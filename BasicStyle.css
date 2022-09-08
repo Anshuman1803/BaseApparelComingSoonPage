@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+/* font-family: 'Josefin Sans', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+#MainContainer{
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+header{
+    width: 90%;
+    margin: 1.5em auto 0em;
+}
+header img{
+    width: 120px;
+}
+.Poster{
+    width: 100%;
+}
+.Poster img{
+    width: 100%;
+}
+.Content{
+    text-align: center;
+    gap: 1em;
+    width: 100%;
+    margin: 0 auto;
+}
+.title{
+    margin: 0 auto;
+    width: 90%;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    padding: 0.5em 0;
+}
+.title h1{
+    font-size: 40px;
+    color: hsl(0, 6%, 24%);
+}
+.title span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+.info{
+    width: 90%;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin: 0 auto;
+}
+.info p{
+    font-size: 0.9em;
+    color: hsl(0, 36%, 70%);
+    line-height: 1em;
+   font-weight: 400;
+}
+form{
+    margin-top: 1.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    padding-left: 1em;
+}
+#EmailBox{
+    width: 100%;
+    padding: 0.5em;
+    color:  hsl(0, 6%, 24%);
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    height: 40px;
+}
+#ArrowButton{
+    background-image: url(./images/icon-arrow.svg), linear-gradient(135deg,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    padding: 1.6em 3em;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0em 0.5em 0.5em rgba(0, 0, 0, 0.07);
+} 
+#ArrowButton:hover{
+    cursor: pointer;
+    background-image: url(./images/icon-arrow.svg), linear-gradient(135deg,  hsla(0, 80%, 86%, 0.836),  hsla(0, 74%, 74%, 0.514));
+    
+}
+#EmailBox:focus{
+    outline: none;
+}
+#ErrorMsg{
+    margin-top: 0.5em;
+    text-align: start;
+    padding-left: 1.3em;
+    color: hsl(0, 93%, 68%);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+#ErrorIcon{
+    padding-right: 0.8em;
+}
+
+#ErrorIcon{
+    display: none;
+}
+#ErrorMsg{
+    display: none;
+}
